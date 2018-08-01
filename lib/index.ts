@@ -14,6 +14,9 @@ function isAsyncIterable<T>(
   return !!(iterable as AsyncIterable<T>)[Symbol.asyncIterator]
 }
 
+export function transform<T>(iterable: Iterable<T>): Wrapper<T>
+export function transform<T>(iterable: AsyncIterable<T>): AsyncWrapper<T>
+
 export function transform<T>(iterable: Iterable<T> | AsyncIterable<T>) {
   if (isAsyncIterable(iterable)) {
     return new AsyncWrapper(iterable)
