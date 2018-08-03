@@ -4,11 +4,6 @@
     "tslint-plugin-prettier"
   ],
   "rules": {
-    "prettier": [
-      true,
-      {
-        "semi": false
-      }
-    ]
+    "prettier": true
   }
 }

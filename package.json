@@ -35,5 +35,8 @@
       "tslint -p . --fix",
       "git add"
     ]
+  },
+  "prettier": {
+    "semi": false
   }
 }
