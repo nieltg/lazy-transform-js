@@ -1,6 +1,6 @@
 {
   "name": "lazy-transform",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform iterable into another iterable lazily",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
