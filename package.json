@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": false,
   "engines": {
-    "node": ">=10"
+    "node": ">=6"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
