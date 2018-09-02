@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/nieltg/lazy-transform-js.svg?branch=master)](https://travis-ci.org/nieltg/lazy-transform-js)
 [![Coverage Status](https://coveralls.io/repos/github/nieltg/lazy-transform-js/badge.svg?branch=master)](https://coveralls.io/github/nieltg/lazy-transform-js?branch=master)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![npm](https://img.shields.io/npm/v/lazy-transform/latest.svg)](https://www.npmjs.com/package/lazy-transform)
 
 > Ever wanted to use async functions in [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)? This library may help you to do that.
 
