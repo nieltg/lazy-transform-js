@@ -53,6 +53,7 @@
     ],
     "exclude": [
       "**/*.d.ts",
+      "coverage",
       "dist"
     ],
     "all": true
