@@ -1,17 +1,25 @@
 language: node_js
 cache: yarn
 
-node_js: "10"
+node_js:
+  - "6"
+  - "8"
+  - "10"
 
 after_success:
   - npm install --no-save coveralls
   - npx nyc report --reporter=text-lcov | npx coveralls
 
-deploy:
-  provider: npm
-  email: nieltansah+npmjs@gmail.com
-  api_key: $NPM_API_KEY
+jobs:
+  include:
+    - stage: deploy
+      if: branch == master AND tag IS present
+      node_js: "10"
 
-  skip_cleanup: true
-  on:
-    tags: true
+      script: skip
+      deploy:
+        provider: npm
+        email: nieltansah+npmjs@gmail.com
+        api_key: $NPM_API_KEY
+
+        skip_cleanup: true
