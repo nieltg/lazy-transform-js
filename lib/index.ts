@@ -5,6 +5,8 @@
  * license file in the root directory of this project.
  */
 
+import "./polyfills"
+
 import { AsyncWrapper } from "./async-wrapper"
 import { Wrapper } from "./wrapper"
 
